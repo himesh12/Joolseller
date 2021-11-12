@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "f72e7a2e-3ea5-4dda-af54-b159d25b9f4b",
+		"name": "SellerApp - 1. Login - Done",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "7687822468",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/check-member",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"check-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OTP Send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "8700405576",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/otp",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OTP Verification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "4649746464",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/verify-otp",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"verify-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "yhhigig@hhd.coi",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OTP Send -extra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "8700405576",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/send-otp",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"send-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OTP Verification - extra",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/seller/verify-otp?phone=8700405576&otp=147027",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"verify-otp"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "8700405576"
+						},
+						{
+							"key": "otp",
+							"value": "147027"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

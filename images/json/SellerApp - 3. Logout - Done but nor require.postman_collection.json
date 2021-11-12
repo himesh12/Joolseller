@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "c322f6a2-a013-40b0-97b9-9e77b3eff8cf",
+		"name": "SellerApp - 3. Logout - Done but nor require",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/seller/logout",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

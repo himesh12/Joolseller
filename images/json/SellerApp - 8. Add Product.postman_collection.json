@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "2d932433-4ad9-4a04-b6ae-692a1f240e3b",
+		"name": "SellerApp - 8. Add Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiM2Q4YzBlMmM0Yzk0MDgyODM3MzcxYTZiNGM1MzRkNWNjY2Q1ODNmYzhmY2RhNDJiMTc5NTgyOTU5NTdjODA1NDU4MTBkNmY3YjZmNzgxMDQiLCJpYXQiOjE2MzM0NDE3MjEuMDU1MjcsIm5iZiI6MTYzMzQ0MTcyMS4wNTUyODUsImV4cCI6MTY2NDk3NzcyMC45NTc0MjYsInN1YiI6IjI1Iiwic2NvcGVzIjpbXX0.fslgQw6fRYWzKzlcInfwDMl5HwKMK1dT_01LfRjjhpOqRVaYVIuGfwPfPbPRqXaOXKZz0ztg1CXSjDufp-TRp2m2NF2pIdWqZ4qg8th7jDKfU88ZYc-SIEsRE2zh-suH6Tf_-4e8LjTmemhnK3UnwQrgOWsnsoUsVRTk6_7Jt4wzuuIBApnOxhqdxQQ1mTTcZixpeWgi0BrmS4WBUsDAkOmjy0JA5Je58EafQCFtDnpG0-7Qq5-PCU_23tnq2NYnKMU6x4viSgr-9dJgrEqrq9OH-aGM5ZiLdFc_H8H8Vo3XaddXZmgdo3qMphFdLZAm7OpmjDQzo39fXIR6TWJrRGdstI-ps6ZXLO2Buwda6X924-Wd-xd4h6wVqpuV3PShQZO3_asOYSiW3HI6FshcXvpoNw_O3oLxc9XPUp52anYF71N2v_wOoBg_Firs5-dnB8iFDpqwU-UMrhQJO1XAr2f0Lvvx3Thy8JdV0pJCxr6js8RuiIdIonhQJ53XJPif3uhMm5GdO1Lno3w4PCCyOGpqxMDfWxyESjIYEZyKo4hrNySfU_F9cPCphLZvIZZx6e1SRO1vp6T1trknS7Mw6g0T2N0UXowg1ztd5O8_vPQOKqSHH0Q5GXULn7TuRdjIVRkRXF_MS3V8uBXYIaOuOaxphb0QknFpJYZEniOZU3w"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Watch",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "1",
+							"description": "id",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "1",
+							"description": "id",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"description": "id",
+							"type": "text"
+						},
+						{
+							"key": "sub_category",
+							"value": "1",
+							"description": "id",
+							"type": "text"
+						},
+						{
+							"key": "product_description",
+							"value": "hell product",
+							"type": "text"
+						},
+						{
+							"key": "primary_color",
+							"value": "2",
+							"description": "id",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "width",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "material",
+							"value": "Brass",
+							"description": "name",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "purchase_price",
+							"value": "225",
+							"type": "text"
+						},
+						{
+							"key": "image1",
+							"type": "file",
+							"src": "/C:/Users/Mohit/Desktop/HMTe-HM-9072-Metal-Analog-SDL494827480-1-db8fc.jpg"
+						},
+						{
+							"key": "image2",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image3",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image4",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image5",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "tags",
+							"value": "dd,dfdfas,ffssf",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/seller/product"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmE1NDcwNDhhZWUzNjRjMzNjMGIyNDI0MTRmZjUzOGQ5YTg5YWM4YjU0ODYxMTY2NWY4ODFhOGJiNTFlNjNiMWEyYmI0ODMxNTdjNmVhODMiLCJpYXQiOjE2MzI3Mzk0ODQuMjY1NjA2LCJuYmYiOjE2MzI3Mzk0ODQuMjY1NjIyLCJleHAiOjE2NjQyNzU0ODQuMTc0MTc1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.QB4n6V-e_7h3O9KIHelRk3-ffeDgsp0ncU79MjP8U_O0RGBaasAcCBKft7HZB9LIMcSAtMSUhD0KUBHMzpqd6PPyOgazO79byjnyHes9VbWaNZ5DEvlg9AS8HKwnI-XYm6F3i66FC3Q6xruXlvgAWbu_MBGTgQxH0T7lCq1LusqR4IvDTyCka2VbYyBKl1Vg-veOW2JhG21AZWlWCTB8suw__nunFU_yWQ2m7sMMnDNjPWGPZuHBboNGCyIin-qtGABTpvQ7x3x4EsedIATxgha-wiBJI-pvFcrzA5pIhIWkZ-Xn2QKSkQfE1jxttvl-zsOsDmsuJi96E8htCyxowrBPnSbQxp89hh1QJawmRY7OTAiwiWyrgEXCTTg-w4-34aSkVz-Xkxuqkpi6b4Ygtbt9pg2rWG0I8ZEMbZDMXC4QMh-uxJJ78S5atP2gcFzr3z5znHbxwFkdwDGuXX7Q_eQT4UmHqZRJYxSs496s0vc_laeddQSk2j8eO-NaSFB-yDZAEhvjJBBFQotmLqR2VnEnVr1ltgDCtR623Bg-0mlTGGAQC_pFVSMGiHSITBAv0FjoatkPAE6K61ZZdQfS66ThdX-npdc9fnWILw4wz4p85L3ckjUJZgrDy6Qa1xRp_jLRfwUeL7pAIiY0yC9EUA7TGVJU31mIUlMc8JSFBi0"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Watch1",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "sub_category",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "product_description",
+							"value": "hell product",
+							"type": "text"
+						},
+						{
+							"key": "primary_color",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "width",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "length",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "material",
+							"value": "Brass",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "purchase_price",
+							"value": "225",
+							"type": "text"
+						},
+						{
+							"key": "image1",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image2",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image3",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image4",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "image5",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": "{{base_url}}/seller/product/24"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2E0MzI0YzcyZmVhN2ZmZDY4MmNjYWY5ODk3NmVlZGViNTY3NWQ3YmQ5NDE5NzIyNTgzODYxODEzMmFlMjRhZDAzYzU2ZmFlNmMzYzE5NzMiLCJpYXQiOjE2MzI4MDQ5MzkuNTA2NTg4LCJuYmYiOjE2MzI4MDQ5MzkuNTA2NTkzLCJleHAiOjE2NjQzNDA5MzkuNTAzNDIxLCJzdWIiOiIyNCIsInNjb3BlcyI6W119.ZQkwgH_lU7LY5vAeukoHQOESepPEJR3o0C_UP9nChh3FF5nwxGyG2glbOE__56NTJv-u2fk93Ex7xWRkgZNFcSMOX6NiDso8k8TcSL1zqpL_vU6rcajGAAgQhVWw5XJ5xMC7DRDhjFbaTwrZv26_4xmxqQ9UEK5Usk1ZGPh9PSD_UOoI7QD3YFLA6MnSR2JwuTJwVYtQeiRCji2tlC2QipgZiPBodJjwqd2SXlFwuJvkdS-y1XZ0nEinO8MtWvX31RTn279Ik-GgWLhTTOWM4_hmcQH8y8Oyp9M8_vJA1vkGOyZvjmccAVChxQCJOhyAMMx2HoG_wKM5-pJnJrEnESAqUV5nVZul2Wsa6qow7cKEct0QOO1SfgrngaSE4jMY8QLOg4zO_Vxaf-qaXJtzLecCzR4otedBdrMRrnqYTlhAGwVIfVM0RkJwM8HTCaHgUdeuT7_xL2vqTzC_OUHZ722bKBNpkkYiUUJ-0Xu42F4s5QKPMTRFBp3JA_W3AlrO29OuRv1reRyglaGNG96YA4xRhuyksaiKMbdB94FRkkBzPASS_O0aHUL9gp0coqTTSgyRcw8Dr0vHsmjfD1I_rqZKgZLS6lK2vFsy7ZYEmt_yEejo3dtEvdNHoI0RuqNaGFRJkoDD4ZxILNGVavb5k7TMg1oxc3Qbj65eF_IEih8"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "[1]",
+							"type": "text"
+						},
+						{
+							"key": "subcategory_id",
+							"value": "[20]",
+							"type": "text"
+						},
+						{
+							"key": "orderby",
+							"value": "price",
+							"type": "text"
+						},
+						{
+							"key": "order",
+							"value": "asc",
+							"type": "text"
+						},
+						{
+							"key": "from_price",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "to_price",
+							"value": "100000000000",
+							"type": "text"
+						},
+						{
+							"key": "brand_id",
+							"value": "[1]",
+							"type": "text"
+						},
+						{
+							"key": "material",
+							"value": "[abdsd]",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "[Blue]",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/seller/product"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product Static data",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjJkMDc1MTcyYzNjOWQxNmFiZDkyYTgyNTA1NjY5MTIxMGY5ZDI0Y2IxYmE3ZDIyMDcwZjUzOGJhMmU1MWU1NjgyMDk5NTUxYzRkMTk0M2UiLCJpYXQiOjE2MzM5MzY2ODIuOTIwMzkyLCJuYmYiOjE2MzM5MzY2ODIuOTIwNDA5LCJleHAiOjE2NjU0NzI2ODIuMTgxOTg5LCJzdWIiOiI1MCIsInNjb3BlcyI6W119.CVnhLVQj1Fhaf68G1ZZFRV0J4BzcCIe5_jYTso6WtTMJ7a9iygg9S4n2ywEK8Gycu9VjhzZpI5sn0oOYrUoeBzStehe_12IB2FSk58xlhQpZ8Y6WpVEtCvWhVh-l_aFQwPLy80YryDdw41cBKeDWKeLxulUazYIhTpu3NnC2_ujmucNMXi0lnEHQ7UNN5iUQ57XbEmeuwbsOwOw6qvYmHRwlQ1yu7cXnJonqEzgvFOfmOorWL6dliLn6GZVLPSaVzY59HzmGwbD5uhoUrtJO_af2Bq___9J3BcNoeMScZnpFLQdxXRJd4GVW9K0moj0jIi_2zTJcLNpkHXtq2sCDrpMLF-34H8G9UnzHntdgFnQhSdeBgVEhwp4HdVO082Y_YMMDL8LNnpLUkvr0G0WB2SRiyjQjIprCp2K9uLkJPBqbObdXyESFzBlczc6_J9QS2mrjLUfaZ86sbhC5wY140_05p0fD6Z8n-I0ynuAoQpyNNSDRTWGZ_0IsAkZZPpJI26KXABF0X07prwaFoyq4wip0xuMiqGwiZnlbFDq7FhRfgif1vhCdPIQYAxP8Q-imXUCzFnFe4X6gfcjw6KK-qsvse_nuOFbawVnh6JITZirKTiRiDhTbziX2MMYPQfD3A_hosubj5Zetf800WHzeN2SWKasvGTnqEEFTQbjISfM"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}/seller/product-data"
+			},
+			"response": []
+		},
+		{
+			"name": "Change Product Status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmE1NDcwNDhhZWUzNjRjMzNjMGIyNDI0MTRmZjUzOGQ5YTg5YWM4YjU0ODYxMTY2NWY4ODFhOGJiNTFlNjNiMWEyYmI0ODMxNTdjNmVhODMiLCJpYXQiOjE2MzI3Mzk0ODQuMjY1NjA2LCJuYmYiOjE2MzI3Mzk0ODQuMjY1NjIyLCJleHAiOjE2NjQyNzU0ODQuMTc0MTc1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.QB4n6V-e_7h3O9KIHelRk3-ffeDgsp0ncU79MjP8U_O0RGBaasAcCBKft7HZB9LIMcSAtMSUhD0KUBHMzpqd6PPyOgazO79byjnyHes9VbWaNZ5DEvlg9AS8HKwnI-XYm6F3i66FC3Q6xruXlvgAWbu_MBGTgQxH0T7lCq1LusqR4IvDTyCka2VbYyBKl1Vg-veOW2JhG21AZWlWCTB8suw__nunFU_yWQ2m7sMMnDNjPWGPZuHBboNGCyIin-qtGABTpvQ7x3x4EsedIATxgha-wiBJI-pvFcrzA5pIhIWkZ-Xn2QKSkQfE1jxttvl-zsOsDmsuJi96E8htCyxowrBPnSbQxp89hh1QJawmRY7OTAiwiWyrgEXCTTg-w4-34aSkVz-Xkxuqkpi6b4Ygtbt9pg2rWG0I8ZEMbZDMXC4QMh-uxJJ78S5atP2gcFzr3z5znHbxwFkdwDGuXX7Q_eQT4UmHqZRJYxSs496s0vc_laeddQSk2j8eO-NaSFB-yDZAEhvjJBBFQotmLqR2VnEnVr1ltgDCtR623Bg-0mlTGGAQC_pFVSMGiHSITBAv0FjoatkPAE6K61ZZdQfS66ThdX-npdc9fnWILw4wz4p85L3ckjUJZgrDy6Qa1xRp_jLRfwUeL7pAIiY0yC9EUA7TGVJU31mIUlMc8JSFBi0"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "{{base_url}}/seller/product/status/23"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product Image",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmE1NDcwNDhhZWUzNjRjMzNjMGIyNDI0MTRmZjUzOGQ5YTg5YWM4YjU0ODYxMTY2NWY4ODFhOGJiNTFlNjNiMWEyYmI0ODMxNTdjNmVhODMiLCJpYXQiOjE2MzI3Mzk0ODQuMjY1NjA2LCJuYmYiOjE2MzI3Mzk0ODQuMjY1NjIyLCJleHAiOjE2NjQyNzU0ODQuMTc0MTc1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.QB4n6V-e_7h3O9KIHelRk3-ffeDgsp0ncU79MjP8U_O0RGBaasAcCBKft7HZB9LIMcSAtMSUhD0KUBHMzpqd6PPyOgazO79byjnyHes9VbWaNZ5DEvlg9AS8HKwnI-XYm6F3i66FC3Q6xruXlvgAWbu_MBGTgQxH0T7lCq1LusqR4IvDTyCka2VbYyBKl1Vg-veOW2JhG21AZWlWCTB8suw__nunFU_yWQ2m7sMMnDNjPWGPZuHBboNGCyIin-qtGABTpvQ7x3x4EsedIATxgha-wiBJI-pvFcrzA5pIhIWkZ-Xn2QKSkQfE1jxttvl-zsOsDmsuJi96E8htCyxowrBPnSbQxp89hh1QJawmRY7OTAiwiWyrgEXCTTg-w4-34aSkVz-Xkxuqkpi6b4Ygtbt9pg2rWG0I8ZEMbZDMXC4QMh-uxJJ78S5atP2gcFzr3z5znHbxwFkdwDGuXX7Q_eQT4UmHqZRJYxSs496s0vc_laeddQSk2j8eO-NaSFB-yDZAEhvjJBBFQotmLqR2VnEnVr1ltgDCtR623Bg-0mlTGGAQC_pFVSMGiHSITBAv0FjoatkPAE6K61ZZdQfS66ThdX-npdc9fnWILw4wz4p85L3ckjUJZgrDy6Qa1xRp_jLRfwUeL7pAIiY0yC9EUA7TGVJU31mIUlMc8JSFBi0"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "{{base_url}}/seller/product-image/delete/18"
+			},
+			"response": []
+		},
+		{
+			"name": "Product Detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNmE1NDcwNDhhZWUzNjRjMzNjMGIyNDI0MTRmZjUzOGQ5YTg5YWM4YjU0ODYxMTY2NWY4ODFhOGJiNTFlNjNiMWEyYmI0ODMxNTdjNmVhODMiLCJpYXQiOjE2MzI3Mzk0ODQuMjY1NjA2LCJuYmYiOjE2MzI3Mzk0ODQuMjY1NjIyLCJleHAiOjE2NjQyNzU0ODQuMTc0MTc1LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.QB4n6V-e_7h3O9KIHelRk3-ffeDgsp0ncU79MjP8U_O0RGBaasAcCBKft7HZB9LIMcSAtMSUhD0KUBHMzpqd6PPyOgazO79byjnyHes9VbWaNZ5DEvlg9AS8HKwnI-XYm6F3i66FC3Q6xruXlvgAWbu_MBGTgQxH0T7lCq1LusqR4IvDTyCka2VbYyBKl1Vg-veOW2JhG21AZWlWCTB8suw__nunFU_yWQ2m7sMMnDNjPWGPZuHBboNGCyIin-qtGABTpvQ7x3x4EsedIATxgha-wiBJI-pvFcrzA5pIhIWkZ-Xn2QKSkQfE1jxttvl-zsOsDmsuJi96E8htCyxowrBPnSbQxp89hh1QJawmRY7OTAiwiWyrgEXCTTg-w4-34aSkVz-Xkxuqkpi6b4Ygtbt9pg2rWG0I8ZEMbZDMXC4QMh-uxJJ78S5atP2gcFzr3z5znHbxwFkdwDGuXX7Q_eQT4UmHqZRJYxSs496s0vc_laeddQSk2j8eO-NaSFB-yDZAEhvjJBBFQotmLqR2VnEnVr1ltgDCtR623Bg-0mlTGGAQC_pFVSMGiHSITBAv0FjoatkPAE6K61ZZdQfS66ThdX-npdc9fnWILw4wz4p85L3ckjUJZgrDy6Qa1xRp_jLRfwUeL7pAIiY0yC9EUA7TGVJU31mIUlMc8JSFBi0"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}/seller/product/24"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Brands",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

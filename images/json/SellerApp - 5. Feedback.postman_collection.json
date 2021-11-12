@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "8e4c07e7-f013-4350-881a-5e550df8cfd2",
+		"name": "SellerApp - 5. Feedback",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "App Feedback",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2E0MzI0YzcyZmVhN2ZmZDY4MmNjYWY5ODk3NmVlZGViNTY3NWQ3YmQ5NDE5NzIyNTgzODYxODEzMmFlMjRhZDAzYzU2ZmFlNmMzYzE5NzMiLCJpYXQiOjE2MzI4MDQ5MzkuNTA2NTg4LCJuYmYiOjE2MzI4MDQ5MzkuNTA2NTkzLCJleHAiOjE2NjQzNDA5MzkuNTAzNDIxLCJzdWIiOiIyNCIsInNjb3BlcyI6W119.ZQkwgH_lU7LY5vAeukoHQOESepPEJR3o0C_UP9nChh3FF5nwxGyG2glbOE__56NTJv-u2fk93Ex7xWRkgZNFcSMOX6NiDso8k8TcSL1zqpL_vU6rcajGAAgQhVWw5XJ5xMC7DRDhjFbaTwrZv26_4xmxqQ9UEK5Usk1ZGPh9PSD_UOoI7QD3YFLA6MnSR2JwuTJwVYtQeiRCji2tlC2QipgZiPBodJjwqd2SXlFwuJvkdS-y1XZ0nEinO8MtWvX31RTn279Ik-GgWLhTTOWM4_hmcQH8y8Oyp9M8_vJA1vkGOyZvjmccAVChxQCJOhyAMMx2HoG_wKM5-pJnJrEnESAqUV5nVZul2Wsa6qow7cKEct0QOO1SfgrngaSE4jMY8QLOg4zO_Vxaf-qaXJtzLecCzR4otedBdrMRrnqYTlhAGwVIfVM0RkJwM8HTCaHgUdeuT7_xL2vqTzC_OUHZ722bKBNpkkYiUUJ-0Xu42F4s5QKPMTRFBp3JA_W3AlrO29OuRv1reRyglaGNG96YA4xRhuyksaiKMbdB94FRkkBzPASS_O0aHUL9gp0coqTTSgyRcw8Dr0vHsmjfD1I_rqZKgZLS6lK2vFsy7ZYEmt_yEejo3dtEvdNHoI0RuqNaGFRJkoDD4ZxILNGVavb5k7TMg1oxc3Qbj65eF_IEih8"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "summary",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/seller/suggestion/store"
+			},
+			"response": []
+		}
+	]
+}

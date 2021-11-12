@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "7710d37f-bfef-40b3-9ee9-a7f9740cbe57",
+		"name": "SellerApp - 4. Update UserProfile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Update User deatils",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiYWU0YzU5MTM4ZmNjNWNmNzk0YjlmNzgzN2Q0YmUyODc3MTFhM2Q1Y2Y1NzFmNmI2ZmFlN2Y5OGI3Y2UyZGU5M2Q1ODk1YmRjMWFhZGJlYTgiLCJpYXQiOjE2Mjk2OTY1NTYuMTc2ODYzLCJuYmYiOjE2Mjk2OTY1NTYuMTc2ODY4LCJleHAiOjE2NjEyMzI1NTYuMTczMzMxLCJzdWIiOiIzNiIsInNjb3BlcyI6W119.RdlivURQUIz7lJt2jPQpbqS3W00qicB906NVJQhnAj1pBjlovDVPwLB1P-FaHyQW4VZHE3I1udByiBEQ3yYHCIbARcI2nnFOqAioetfYCS0TiJkR0qBLn2f0EcTihmUFP517W0kSOaerUCoJcaYVJMoAjhfRr9lUvC_H3LoVFQYDbfh2MD5j8qCrSDYcktP6bupa9aMLWP1zfMGQrVnldQM8ogn46Xc3oOhWmW7JlnH_frtpSpu9a_xouxxbwyhJpTHxqBC4FOxThmECSFfBngdtexg_lo4MiyacN3WfPVzQtWrAPT0ScQCBiq4PmlgYdWA_n3kFMQ3vUtOwLB8LWA1xQEpo79Q6ANV8AWBgNIDBEokWp7TetVK9yvyrluT6N430hpUFv-Qc9Al_2JP4UYrWyw-lnO-VhzhxdbOd4AYpbs8vV9wLTAhBqc4TorbbGs8ivH5I4az3HgfiztvzmDd9ZkWIBLzWbuUJPmLDT-TiQeFniwnJHO7NCz0WEGds8vNLmyqwcKvnuPzXcebqn9zV88sYyAMDcH3HBbQ9NGofve9y7WXXKzNdGopLPIgKyr8a0wwZLS_figDlaTv2ikPG2lk66PXDuZx8fNC9qG_ISaQHrIbw9dRNb_P0hb2fjSTW6SKGXHZbq9QhrcQTlXvn_aQgEMo06GRiJP5IL8c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/profile-update",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"profile-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWU1NzNkZjdiYTc2NmZlMmNjMDBkMjhhZDM1MWVmNzU1YjExMDBiOTY2MzI1MjhkNDFjMzAxMDRmMTlmYzg3NDI1ZmI3MmZjNDc5NjAzNTUiLCJpYXQiOjE2MzA2NTQwMzguOTUxNzczLCJuYmYiOjE2MzA2NTQwMzguOTUxNzksImV4cCI6MTY2MjE5MDAzOC4xMjkwNDYsInN1YiI6IjEwIiwic2NvcGVzIjpbXX0.qU9hMzTzVLJBVTXnxZFIZ6DN0alPE5m_ERdc5dQRRITuHeMDe87ZlvkvuaYABGzqCICFnymCFILcvJfhzfvooDqDDkaaS7qkFAlXNskycIBXAmNvcvLQQfdLde99hp31Pdm7dXbGdFyagHqL1HRLj5VVF093BC7_ehBZ8HazkHx7TeKpcWW0t4D9TFlM7YyYHTdJnu8SYOEjcxvI8PYud1nk7_0SB_enhBSfkMJ3ei9FULgwTySSHykRWeH7KIGX0PEFSEJlRny-s1Pv2HfrVRRJxUCyM0q6QPZjWOw81laIz_iTCRQ17jUp15tCrhLbj_z_o5oxUeHc4OH9Rh8khpm0BA4yU0SB5tthDg_EyCxW3IpFCkm-eLff5WQNEHiq64v1KBDwTp3GgRLYDc-r-AQwSjAaD4rUkZsXtCoTxSzpy5-9BlSqM8FpU-azpMnSm7IgjXqAMTOXlp51wllEBs94uLd6rI4xcdQ5Is9y0Rr3OVoN4G_zU_GuNYTHl9RyTLuFpBKi0NuZSARINIoZdooPnP0jkAEFuCS_b_BWr7dUBE5QhhpvwWUsuebQ2EnuYNkiuSATVbwkM8qqrmCJX-AVNHK38lh35h_ckNRfvWQBlNycUEGgsF526mBMJgejgu8Y_LZjG95GHy3D0b4V9OW6Glz_Z3nwMHh5QErMzHI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/seller/user",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

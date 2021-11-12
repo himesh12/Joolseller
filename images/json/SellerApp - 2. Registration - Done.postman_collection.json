@@ -1,0 +1,308 @@
+{
+	"info": {
+		"_postman_id": "446153e5-ce91-4d80-a5a7-4cce7b4c385e",
+		"name": "SellerApp - 2. Registration - Done",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check User - Done",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "7678658965",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/check-member",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"check-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OTP Send - Done",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "7217216658",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/send-otp",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"send-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OTP Verification- Done",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "46413454",
+							"type": "text"
+						},
+						{
+							"key": "otp",
+							"value": "464446",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/verifyotp",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"verifyotp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "4646797464",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "yhhigig@hhd.coi",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Rahul",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/register",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Shop Detail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "shop_information",
+							"value": "",
+							"description": "Shop Information",
+							"type": "text"
+						},
+						{
+							"key": "shop_name",
+							"value": "",
+							"description": "Shop Name",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "India",
+							"description": "Country",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "",
+							"description": "Shop Adress",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "pincode",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "account_holder_name",
+							"value": "",
+							"description": "Bank Account Holder Name",
+							"type": "text"
+						},
+						{
+							"key": "account_type",
+							"value": "",
+							"description": "saving or current",
+							"type": "text"
+						},
+						{
+							"key": "bank_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "account_no",
+							"value": "",
+							"description": "Bank Account Number",
+							"type": "text"
+						},
+						{
+							"key": "account_branch_address",
+							"value": "",
+							"description": "Bank Branch Adress",
+							"type": "text"
+						},
+						{
+							"key": "account_ifsc",
+							"value": "",
+							"description": "Bank Ifsc COde",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "",
+							"description": "gst or homemade",
+							"type": "text"
+						},
+						{
+							"key": "gst",
+							"value": "",
+							"description": "Gst no if type is gst ",
+							"type": "text"
+						},
+						{
+							"key": "locality",
+							"value": "",
+							"description": "LandMark",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/seller/complete-profile",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"complete-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "State List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/state",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"state"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Shop detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDdlMmY3ZTk3MTY0YmJlN2JjYmFmYmQwY2U3MDliNTQ1MWIzYTNlNWU3ZjdmMDM4YjYwOWY5ZjYxMjJkNzA3YWZlMmY0ZjM0MjVhODgwZjEiLCJpYXQiOjE2MzA5MjY0MTcuMjQ4MDY1LCJuYmYiOjE2MzA5MjY0MTcuMjQ4MDg2LCJleHAiOjE2NjI0NjI0MTYuMTQ3MTE4LCJzdWIiOiIxMSIsInNjb3BlcyI6W119.QA6GLL1aNPqeohCyhVtGUxC5fbui7oRQck36zZRDBK0g6jTnJ-0AP8W1DtxLE77I8VDwhOpLB-O-Lo2tXJS9YhryVtE-_nyGtXx8_gEJ4k3lbj7_UPwvnXWLEfnSQy25hP1OiBzyNZmKH53yrECHNLb7FAaAao6nd73TSkriSsMIdBIeqrSS0uCkAaccJjyo11juPIUqZcVwOhcnWYK9DJHg8-wI2INiMtYKxPB2iTcHdC8u4B-SWXQC9MITIrR4k5iTW8AQ_gsszpz_O0pHfCAkr5aUf_TKpffb-t4SHKtsgj5aBzjMb9AYjlv61ArTpIAuHj4qvnfZXKHac5HmliTYowabZJqW5-UHgDcjXGfAHL3hNaHfY6cR2BvOhBoQ23czi7-ehMhudFIxHruJneecypte9_AjVx3765IZ1CbNYGqv6a-_wp29OpBfCCdnUp840AD4Kpaji2QkHWHCRfrTwhnYZdPbBf6fcoK-WuJzW5ykTWNd_T2EhvWqrfNOooKuP-3EwoT2-Hd4LVveR6VccHcdnjhp6y6_aXCPoj9jY5arXGxKWGPAF3SYem-ne2_Ax8CHPoNF9QpWlB1_R4-qOtY1l0o8Jnotooy-oNkBwUldM_9RJDxNdUuiPbEVCDsvSaqzrIkMmC9hHgQrIz-kZLTD4qDJBKA59QUA9BQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/seller/shop-details",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"shop-details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

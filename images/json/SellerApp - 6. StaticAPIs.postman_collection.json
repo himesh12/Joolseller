@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "1ad440a3-2480-4e03-a89f-e5793e02a7d8",
+		"name": "SellerApp - 6. StaticAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AboutUs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/seller/page/about",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"page",
+						"about"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerSupport",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/seller/contact",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Term and Condition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/seller/page/terms-condition",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"page",
+						"terms-condition"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Privacy Policy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/seller/page/privacy-policy",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"seller",
+						"page",
+						"privacy-policy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
